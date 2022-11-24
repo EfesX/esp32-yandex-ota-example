@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "nvs_flash.h": "c",
+        "netdb.h": "c",
+        "*.inc": "c",
+        "*.ipp": "c"
+    },
+    "idf.adapterTargetName": "esp32"
+}
