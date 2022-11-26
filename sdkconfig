@@ -253,6 +253,19 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# WIFI Setup
+#
+CONFIG_WIFI_SSID="Netzwerk"
+CONFIG_WIFI_PASSWORD="ubuntu56@brahamDC"
+# end of WIFI Setup
+
+#
+# Yandex Setup
+#
+CONFIG_API_HTTPS="d5di58c3noai2uije3r3.apigw.yandexcloud.net"
+# end of Yandex Setup
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y

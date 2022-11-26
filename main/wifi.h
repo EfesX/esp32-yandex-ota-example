@@ -11,8 +11,8 @@
 
 
 
-#define APP_WIFI_SSID "Netzwerk"
-#define APP_WIFI_PASS "ubuntu56@brahamDC"
+#define APP_WIFI_SSID CONFIG_WIFI_SSID
+#define APP_WIFI_PASS CONFIG_WIFI_PASSWORD
 #define APP_MAX_RETRY 5
 
 

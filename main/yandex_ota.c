@@ -3,7 +3,7 @@
 void (*ota_before_cb)(void *context) = NULL;
 void (*ota_after_cb)(void *context) = NULL;
 
-static const char REQUEST[] = "GET " WEB_URL " HTTP/1.1\r\n"
+static const char REQUEST[] = "GET https://" WEB_SERVER " HTTP/1.1\r\n"
     "Host: "WEB_SERVER"\r\n"
     "User-Agent: esp-idf/1.0 esp32\r\n"
     "Connection: close\r\n"
@@ -227,6 +227,7 @@ static void ota_upgrade_firmware_task(void *p){
                     }
                 } else {
                     ESP_LOGE(OTA_TAG, "received package is not fit len");
+                    ESP_LOGE(OTA_TAG, "%d < %d", len, magic_byte_position + sizeof(esp_image_header_t) + sizeof(esp_image_segment_header_t) + sizeof(esp_app_desc_t));
                     esp_ota_abort(update_handle);
                     goto exit;
                 }

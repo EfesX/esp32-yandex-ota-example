@@ -1,0 +1,24 @@
+menu "WIFI Setup"
+
+    config WIFI_SSID
+        string  "WIFI_SSID"
+        default ""      
+        help
+            Specify the SSID of your WI-FI 
+
+    config WIFI_PASSWORD
+        string "WIFI_PASSWORD"
+        default ""      
+        help
+            Specify the password of your WI-FI 
+endmenu
+
+menu "Yandex Setup"
+
+    config API_HTTPS 
+        string "API HTTPS"
+        default "*****************.apigw.yandexcloud.net"
+        help
+            Specify address (without https://) of Yandex API that is configured to access firmware in Yandex Object Storage
+
+endmenu

@@ -6,3 +6,5 @@ cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(yc_ota_upgrade)
+
+message(STATUS WIFI_SSID: ${WIFI_SSID})

@@ -25,9 +25,9 @@
 #include "esp_partition.h"
 
 
-#define WEB_SERVER  "d5di58c3noai2uije3r3.apigw.yandexcloud.net"
+#define WEB_SERVER  CONFIG_API_HTTPS
 #define WEB_PORT    "443"
-#define WEB_URL     "https://d5di58c3noai2uije3r3.apigw.yandexcloud.net"
+
 
 #define MAX_RX_BUF_LEN  1024
 #define HASH_LEN        32
